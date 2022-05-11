@@ -23,7 +23,7 @@ update tblAddress set age = age + 1 where seq = 1;
 
 delete from tblAddress where seq = 1;    
 
-select * from tblAddress;
+select * from tblAddress order by seq asc;
 
 commit;
 
@@ -256,7 +256,9 @@ from tblInsa i
 
 
 
+select * from tblAddress order by seq desc;
 
+-- 이름,
 
 
 
