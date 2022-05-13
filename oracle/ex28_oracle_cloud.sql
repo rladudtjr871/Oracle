@@ -90,8 +90,22 @@
     
     
     쉘
+    - echo $0 > 현재 사용중인 쉘
     1. bash > 수업에서 쓰는거
     2. zsh > 맥에서 쓰는거
+    
+        
+    zsh 설치
+    - $ sudo apt-get install zsh
+    - $ sudo chsh -s $(which zsh) //기본 쉘을 zsh로 변경한다. > chsh (change shell)
+    - $ sudo chsh -s /usr/bin/zsh
+    
+    zsh 확장 테마
+    - oh-my-zsh > 제공 플러그인 중 테마
+    - sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    
+    zsh
+    - cd /u/b   > /usr/bin 으로 알아 듣는다. > /를 빼도 알아듣는다.
     
     
     Swap
@@ -113,8 +127,16 @@
         - 읽기
         - $ cat /etc/fstab
     
+    .?? 에서 .(dot)은 숨김파일을 뜻한다
+    
     
     2. vi, vim, nano
+        - i > insert > 그래야 작성이 가능
+        - Esc > 편집 끝내기
+        - q > 끝내기
+        - :q > 나가기
+        - :q! > 저장 안하고 강제 나가기
+        - :wq > 저장하고 나가기 > 현재 폴더에서 나가짐
     
     
     루트 사용자 > root > 모든 권한을 가진자
@@ -126,6 +148,36 @@
     2. Asia
     3. Seoul
     4. $ date
+    
+
+    
+    mkdir
+    - make directory
+    - $ mkdir 폴더명
+    - $ mkdir 폴더명 폴더명 폴더명
+    - $ mkdir -p 폴더명/폴더명/폴더명 > 원래는 부모폴더가 먼저 존재해야하지만 > 부모폴더까지 같이 만들어줌
+    
+    
+    
+    rmdir
+    - remove directory
+    - 비어있는 디렉토리만 삭제가 가능하다.
+    - $ rmdir -p 폴더명/폴더명/폴더명
+    
+    
+    
+    touch
+    - $ touch 파일명
+    - 파일을 생성한다.    
+    
+    
+    
+    tree
+    - 현재 디렉토리의 트리구조를 보여준다.
+    - 기본 명령어가 아니다. 설치하면 된다.
+    - $ sudo apt-get install tree
+    
+    
     
 
 
@@ -173,7 +225,22 @@
     - $ sudo chmod -R 777 /var/www/html
     
     
-
+    
+    
+    도메인 구조 == 카테고리 == 패키지
+    
+    하위.중위.상위
+        
+    test.com > 상업 도메인
+    test.co.kr > 국가 도메인
+    test.co.jp
+    test.ac.kr
+    test.go.kr
+    test.org
+    
+    
+    최상위 도메인
+    - 국가 도메인
 
 
 
