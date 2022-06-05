@@ -120,7 +120,7 @@ public class Ex01 {
 			//*** 항상 conn.isClose()가 false 때만 SQL을 처리
 			System.out.println("업무 진행");
 			
-			//접속 종료
+			//오라클 접속 종료
 			conn.close();
 			
 			System.out.println(conn.isClosed()); //접속 상태 확인
@@ -133,7 +133,11 @@ public class Ex01 {
 		
 	}//main
 
-}//Ex01
+}//Ex01   
+
+
+
+
 
 
 
